@@ -11,8 +11,9 @@ function volume_sphere() {
 }
 
 window.onload = function() {
-    document.getElementById('sphereForm').onsubmit = function(event) {
+    document.getElementById('MyForm').onsubmit = function(event) {
         event.preventDefault();
         volume_sphere();
     };
 };
+

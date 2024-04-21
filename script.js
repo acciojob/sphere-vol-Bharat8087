@@ -10,6 +10,9 @@ function volume_sphere() {
     }
 }
 
-window.onload = function() {
-    document.getElementById('sphereForm').onsubmit = volume_sphere;
-};
+window.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('sphereForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        volume_sphere(); 
+    });
+});
